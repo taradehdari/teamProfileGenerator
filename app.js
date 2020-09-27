@@ -96,11 +96,10 @@ function startHtml() {
         <title>Team Profile</title>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark mb-5" style="background-color: darkblue;">
+        <nav class="navbar navbar-dark mb-5" style="background-color: darkblue;">
             <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
         </nav>
-        <div class="container">
-            <div class="row">`;
+        <div class="container">`;
     fs.writeFile("./output/team.html", html, function(err) {
         if (err) {
             console.log(err);
@@ -119,36 +118,36 @@ function addHtml(member) {
         if (role === "Engineer") {
             const gitHub = member.getGithub();
             data = `<div class="col-6">
-            <div class="card mx-auto mb-3" style="width: 18rem">
-            <h5 class="card-header">${name}<br /><br />Engineer</h5>
+            <div class="card mx-auto mb-3" style="width: 18rem; background-color: darkblue;">
+            <h5 class="card-header" style="color: white;">${name}<br /><br />Engineer</h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email Address: ${email}</li>
-                <li class="list-group-item">GitHub: ${gitHub}</li>
+                <li class="list-group-item" style="background-color: lightblue;">ID: ${id}</li>
+                <li class="list-group-item" style="background-color: lightblue;">Email Address: ${email}</li>
+                <li class="list-group-item" style="background-color: lightblue;">GitHub: ${gitHub}</li>
             </ul>
             </div>
         </div>`;
         } else if (role === "Intern") {
             const school = member.getSchool();
             data = `<div class="col-6">
-            <div class="card mx-auto mb-3" style="width: 18rem">
-            <h5 class="card-header">${name}<br /><br />Intern</h5>
+            <div class="card mx-auto mb-3" style="width: 18rem; background-color: darkblue;">
+            <h5 class="card-header" style="color: white;">${name}<br /><br />Intern</h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email Address: ${email}</li>
-                <li class="list-group-item">School: ${school}</li>
+                <li class="list-group-item" style="background-color: lightblue;">ID: ${id}</li>
+                <li class="list-group-item" style="background-color: lightblue;">Email Address: ${email}</li>
+                <li class="list-group-item" style="background-color: lightblue;">School: ${school}</li>
             </ul>
             </div>
         </div>`;
         } else {
             const officePhone = member.getOfficeNumber();
             data = `<div class="col-6">
-            <div class="card mx-auto mb-3" style="width: 18rem">
-            <h5 class="card-header">${name}<br /><br />Manager</h5>
+            <div class="card mx-auto mb-3" style="width: 18rem; background-color: darkblue;">
+            <h5 class="card-header" style="color: white;">${name}<br /><br />Manager</h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID: ${id}</li>
-                <li class="list-group-item">Email Address: ${email}</li>
-                <li class="list-group-item">Office Phone: ${officePhone}</li>
+                <li class="list-group-item" style="background-color: lightblue;">ID: ${id}</li>
+                <li class="list-group-item" style="background-color: lightblue;">Email Address: ${email}</li>
+                <li class="list-group-item" style="background-color: lightblue;">Office Phone: ${officePhone}</li>
             </ul>
             </div>
         </div>`
