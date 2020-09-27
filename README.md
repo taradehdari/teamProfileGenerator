@@ -6,14 +6,15 @@ Team Profile Generator, for creating your work team!
 
 First you have to do an  npm install to get all the dependencies.
 
-Then you run node app.js in the terminal where your prompted to answer the questions to build your team
+When you run node app.js in the terminal, you will be prompted to answer the questions to build your team
 
    ### Picture of prompts
   <img src="./Assets/Screenshot (80).png">
 
-  between each member it asks wether you want to add more employees. when youve added everyone, it will create a team.html file in the output folder
+  between each member it asks wether you want to add more employees. When youve added everyone, it will create a team.html file in the output folder
 
-  ### Picture of Team.html page
+  ### Gif of team.html output
+  <img src="./Assets/websiteGif.gif">
 
     
 
