@@ -5,28 +5,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
+    <title>Team Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
-
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+    <body>
+        <nav class="navbar navbar-dark mb-5" style="background-color: darkblue;">
+            <span class="navbar-brand mb-0 h1 w-100 text-center">Team Profile</span>
+        </nav>
+        <div class="container">
+            <div class="row"><div class="col-6">
+            <div class="card mx-auto mb-3" style="width: 18rem; background-color: darkblue;">
+            <h5 class="card-header" style="color: white;">Tara Dehdari<br /><br />Manager</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="background-color:lightblue;">ID: 1</li>
+                <li class="list-group-item" style="background-color:lightblue;">Email Address: tara.dehdari@gmail.com</li>
+                <li class="list-group-item" style="background-color:lightblue;">Office Phone: 123-4567</li>
+            </ul>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
+        </div><div class="col-6">
+            <div class="card mx-auto mb-3" style="width: 18rem; background-color: darkblue;">
+            <h5 class="card-header" style="color: white;">Tara Dehdari<br /><br />Engineer</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="background-color:lightblue;">ID: 2</li>
+                <li class="list-group-item" style="background-color:lightblue;">Email Address: tara.dehdari@gmail.com</li>
+                <li class="list-group-item" style="background-color:lightblue;">GitHub: taradehdari</li>
+            </ul>
             </div>
-        </div>
+        </div><div class="col-6">
+            <div class="card mx-auto mb-3" style="width: 18rem; background-color: darkblue;">
+            <h5 class="card-header" style="color: white;">Tara Dehdari<br /><br />Intern</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="background-color:lightblue;">ID: 3</li>
+                <li class="list-group-item" style="background-color:lightblue;">Email Address: tara.dehdari@gmail.com</li>
+                <li class="list-group-item" style="background-color:lightblue;">School: UCB coding bootcamp</li>
+            </ul>
+            </div>
+        </div> </div>
     </div>
+    
 </body>
-
 </html>
